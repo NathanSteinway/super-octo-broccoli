@@ -8,8 +8,10 @@ section {
   }
 
 .header h1 {
-    background-color:aquamarine;
+    background-color: #262626;
+    color: #FFFF;
     margin:0;
+    display: flex;
 }
 
 .hero {
@@ -17,4 +19,30 @@ section {
     object-fit: cover;
     background-size: cover;
     background-position: center;
+    display: flex;
+}
+
+/* CSS FOR THREE MAIN CARDS */
+.main-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #262626;
+    align-items: stretch;
+}
+
+/* MAIN CARDS HERE */
+.compare {
+    background-color: blue;
+}
+
+/* CSS FOR BOTH ITEM CARDS */
+
+.item-container {
+    background-color: red;
+}
+
+/* CSS FOR FOOTER BELOW */
+.footer {
+    display:flex;
 }
