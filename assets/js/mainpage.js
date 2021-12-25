@@ -1,13 +1,4 @@
 
-var showDropDown = function () {
-
-    document.getElementById("myDropDown").classList.toggle("show");
-
-};
-
-document.getElementById("part-type-btn").addEventListener('click', showDropDown);
-document.getElementById("series-btn").addEventListener('click', showDropDown);
-document.getElementById("model-btn").addEventListener('click', showDropDown);
 
 
 

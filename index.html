@@ -1,90 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="./assets/css/mainpage.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/mainpage.css">
+  </head>
+
+  <body>
+
+    <!-- navbar  -->
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://media.giphy.com/media/xuXc3kD8AeVaw/giphy-downsized-large.gif">
+            <img src="https://via.placeholder.com/112x28?text=BRANDING!">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item">
+              Get Started
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                More
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  About
+                </a>
+                
+                <a class="navbar-item">
+                  Contact
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  Report an issue
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     
-</head>
+      <hero class="hero is-link is-fullheight-with-navbar" id="hero-container">
+        <div class="hero-body">
+          <p class="title">
+            ELECTRONIC PARTS PICKER
+          </p>
+        </div>
+      </hero>
 
-<body>
+      <div class="columns is-mobile">
+        <div class="column is-one-third">Compare</div>
+        <div class="column">Item 1</div>
+        <div class="column">Item 2</div>
+      </div>
 
-<!-- HEADER -->
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>THE FOOTER IS HERE</strong>
+          </p>
+        </div>
+      </footer>
 
-    <header class="header h1">
-        <h1>ELECTRONIC PARTS COMPARISON TOOL</h1>
-        <nav></nav>
-    </header>
-
-<!-- HERO -->
-
-    <section class="hero">
-
-    </section>
-
-    <section class="main-content-container">
-
-    <!-- COMPARE -->
-
-        <section class="compare" id="compare-box">
-
-            <div class="dropdown-placement">
-                <button id="part-type-btn" class="dropdown-btn">Type</button>
-                <div id="myDropDown" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-
-            <div class="dropdown-placement">
-                <button id="series-btn" class="dropdown-btn">Series</button>
-                <div id="myDropDown" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-
-            <div class="dropdown-placement">
-                <button id="model-btn" class="dropdown-btn">Model</button>
-                <div id="myDropDown" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-
-            <div class="dropdown-placement">
-                <button id="compare-btn" class="dropdown-btn">Compare!</button>
-            </div>
-
-        </section>
-
-    <!-- ITEM 1 -->
-
-        <section class="item-container" id="item-1-container">
-
-        </section>
-
-    <!-- ITEM 2 -->
-
-        <section class="item-container" id="item-2-container">
-
-        </section>
-    
-    </section>
-
-    <footer class="footer">
-        <h2>I AM THE FOOTER</h2>
-    </footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script src="./assets/js/mainpage.js"></script>
-</body>
+  </body>
 
 </html>
