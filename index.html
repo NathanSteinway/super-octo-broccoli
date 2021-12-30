@@ -74,197 +74,213 @@
         </div>
       </hero>
 
-    <div class="columns is-mobile is-multiline is-flex-grow-1 is-centered">
+    <!-- Main Page Content Starts Here -->
+    
+    <main>
+        <div class="columns is-mobile is-multiline is-flex-grow-1 is-centered">
 
-        <!-- SPACER ON LEFT-->
-        <div class="column is-1"></div>
+            <!-- SPACER ON LEFT-->
+            <div class="column is-1"></div>
 
-        <div class="column column-style" id="product-info-fillin-column">
+            <div class="column column-style" id="product-info-fillin-column">
 
-            <!--PRODUCT TYPE BUTTON-->
-            <div class="dropdown is-hoverable"> <!--WE can configure this to play with Javascript by replacing "is-hoverable" with "is-active"-->
-                <div class="dropdown-trigger">
-                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                    <p>Product Type?</p>
-                  </button>
-                </div>
+                <!--PRODUCT TYPE BUTTON-->
 
-                <!--We can put anything we want in these. Links, references, text, anything-->
-                <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                    <div class="dropdown-content">
+                <div class="dropdown is-hoverable"> <!--WE can configure this to play with Javascript by replacing "is-hoverable" with "is-active"-->
+                    <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <p>Product Type?</p>
+                    </button>
+                    </div>
+
+                    <!--We can put anything we want in these. Links, references, text, anything-->
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                        <div class="dropdown-content">
+                                
+                            <a href="#" class="dropdown-item">
+                                GPU
+                            </a>
                             
-                        <a href="#" class="dropdown-item">
-                            GPU
-                        </a>
-                        
 
-                        <hr class="dropdown-divider">
-                        
-                        <a href="#" class="dropdown-item">
-                            CPU
-                        </a>
+                            <hr class="dropdown-divider">
+                            
+                            <a href="#" class="dropdown-item">
+                                CPU
+                            </a>
 
-                        <hr class="dropdown-divider">
+                            <hr class="dropdown-divider">
 
-                        <a href="#" class="dropdown-item">
-                            RAM
-                        </a>
+                            <a href="#" class="dropdown-item">
+                                RAM
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
+                    
+                    <!--MANUFACTURER BUTTON-->
+
+                <div class="dropdown is-hoverable" id="manufacturer-button-dropdown"> <!--WE can configure this to play with Javascript by replacing "is-hoverable" with "is-active"-->
+                    <div class="dropdown-trigger">
+                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <p>Manufacturer?</p>
+                        </button>
+                    </div>
+
+                    <!--We can put anything we want in these. Links, references, text, anything-->
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                        <div class="dropdown-content">
+                                
+                            <a href="#" class="dropdown-item">
+                                AMD
+                            </a>
+                            
+
+                            <hr class="dropdown-divider">
+                            
+                            <a href="#" class="dropdown-item">
+                                NVIDIA
+                            </a>
+
+                            <hr class="dropdown-divider">
+
+                            <a href="#" class="dropdown-item">
+                                INTEL
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Series Button Starts Here -->
                 
-                <!--MANUFACTURER BUTTON-->
+                <div class="dropdown is-hoverable" id="series-button-dropdown"> <!--WE can configure this to play with Javascript by replacing "is-hoverable" with "is-active"-->
+                    <div class="dropdown-trigger">
+                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <p>Series?</p>
+                        </button>
+                    </div>
 
-            <div class="dropdown is-hoverable" id="manufacturer-button-dropdown"> <!--WE can configure this to play with Javascript by replacing "is-hoverable" with "is-active"-->
-                <div class="dropdown-trigger">
-                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                    <p>Manufacturer?</p>
-                    </button>
-                </div>
-
-                <!--We can put anything we want in these. Links, references, text, anything-->
-                <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                    <div class="dropdown-content">
+                    <!--We can put anything we want in these. Links, references, text, anything-->
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                        <div class="dropdown-content">
+                                
+                            <a href="#" class="dropdown-item">
+                                2700
+                            </a>
                             
-                        <a href="#" class="dropdown-item">
-                            AMD
-                        </a>
-                        
 
-                        <hr class="dropdown-divider">
-                        
-                        <a href="#" class="dropdown-item">
-                            NVIDIA
-                        </a>
+                            <hr class="dropdown-divider">
+                            
+                            <a href="#" class="dropdown-item">
+                                1080
+                            </a>
 
-                        <hr class="dropdown-divider">
+                            <hr class="dropdown-divider">
 
-                        <a href="#" class="dropdown-item">
-                            INTEL
-                        </a>
+                            <a href="#" class="dropdown-item">
+                                1070
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!--ITEM 1 COLUMN STARTS HERE -->
+
+            <div class="column column-style" id="item-1-column">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title is-centered">
+                            ITEM 1
+                        </p>
+                    </header>
+
+                    <!-- This can be set up to dynamically accept images from our API, these are just placeholders -->
+
+                    <div class="card-image" id="item-1-image">
+                        <figure class="image is-3by2">
+                            <img src="./assets/images/Graphics_Card.png" alt="Placeholder image">
+                        </figure>
+                    </div>
+
+                    <!-- This will need to be dynamic later using DOM and our APIs -->
+
+                    <div class="card-content" id="product-info">
+                        <ul>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis mollitia esse iure, quis magni soluta suscipit qui, repudiandae, architecto nobis temporibus tempora voluptate sequi deleniti autem ab dicta recusandae assumenda?
+                            </li>
+
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officiis odit nam molestias nemo impedit quis atque nulla sit distinctio. Ut ab laudantium repudiandae quia quisquam, tenetur asperiores id rem?
+                            </li>
+
+                            <li>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, ut facere ex fuga esse, natus ducimus optio vel deleniti cum unde temporibus, exercitationem dolor cupiditate laboriosam provident quia eveniet ipsam!
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ullam iure qui esse ipsam beatae fuga omnis sit, illum et! Nam commodi perspiciatis deleniti esse expedita rerum quaerat perferendis? Odio.
+                            </li>
+
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ratione culpa veritatis magnam cumque voluptates neque veniam! Dolore, doloribus? In voluptatibus tempore cumque nemo sapiente sed! Rerum id dolorum atque.
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="dropdown is-hoverable" id="series-button-dropdown"> <!--WE can configure this to play with Javascript by replacing "is-hoverable" with "is-active"-->
-                <div class="dropdown-trigger">
-                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                    <p>Series?</p>
-                    </button>
-                </div>
+            <!-- Item 2 Column Starts Here -->
 
-                <!--We can put anything we want in these. Links, references, text, anything-->
-                <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                    <div class="dropdown-content">
-                            
-                        <a href="#" class="dropdown-item">
-                            2700
-                        </a>
-                        
+            <div class="column column-style" id="item-2-column">
 
-                        <hr class="dropdown-divider">
-                        
-                        <a href="#" class="dropdown-item">
-                            1080
-                        </a>
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title is-centered">
+                            ITEM 2
+                        </p>
+                    </header>
 
-                        <hr class="dropdown-divider">
+                    <!-- This can be set up to dynamically accept images from our API, these are just placeholders -->
 
-                        <a href="#" class="dropdown-item">
-                            1070
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!--ITEM 1 COLUMN-->
-
-        <div class="column column-style" id="item-1-column">
-            <div class="card">
-                <header class="card-header">
-                    <p class="card-header-title is-centered">
-                        ITEM 1
-                    </p>
-                </header>
-
-                <div class="card-image" id="item-1-image">
-                    <figure class="image is-3by2">
+                    <div class="card-image" id="item-2-image">
+                        <figure class="image is-3by2">
                         <img src="./assets/images/Graphics_Card.png" alt="Placeholder image">
-                    </figure>
-                </div>
+                        </figure>
+                    </div>
 
-                <div class="card-content" id="product-info">
-                    <ul>
-                        <li>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis mollitia esse iure, quis magni soluta suscipit qui, repudiandae, architecto nobis temporibus tempora voluptate sequi deleniti autem ab dicta recusandae assumenda?
-                        </li>
+                    <!-- This will need to be dynamic later using DOM and our APIs -->
 
-                        <li>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officiis odit nam molestias nemo impedit quis atque nulla sit distinctio. Ut ab laudantium repudiandae quia quisquam, tenetur asperiores id rem?
-                        </li>
+                    <div class="card-content" id="product-info">
+                        <ul>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis mollitia esse iure, quis magni soluta suscipit qui, repudiandae, architecto nobis temporibus tempora voluptate sequi deleniti autem ab dicta recusandae assumenda?
+                            </li>
 
-                        <li>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, ut facere ex fuga esse, natus ducimus optio vel deleniti cum unde temporibus, exercitationem dolor cupiditate laboriosam provident quia eveniet ipsam!
-                        </li>
-                        <li>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ullam iure qui esse ipsam beatae fuga omnis sit, illum et! Nam commodi perspiciatis deleniti esse expedita rerum quaerat perferendis? Odio.
-                        </li>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officiis odit nam molestias nemo impedit quis atque nulla sit distinctio. Ut ab laudantium repudiandae quia quisquam, tenetur asperiores id rem?
+                            </li>
 
-                        <li>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ratione culpa veritatis magnam cumque voluptates neque veniam! Dolore, doloribus? In voluptatibus tempore cumque nemo sapiente sed! Rerum id dolorum atque.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                            <li>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, ut facere ex fuga esse, natus ducimus optio vel deleniti cum unde temporibus, exercitationem dolor cupiditate laboriosam provident quia eveniet ipsam!
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ullam iure qui esse ipsam beatae fuga omnis sit, illum et! Nam commodi perspiciatis deleniti esse expedita rerum quaerat perferendis? Odio.
+                            </li>
 
-
-        <div class="column column-style" id="item-2-column">
-
-            <div class="card">
-                <header class="card-header">
-                    <p class="card-header-title is-centered">
-                        ITEM 2
-                    </p>
-                </header>
-
-                <div class="card-image" id="item-2-image">
-                    <figure class="image is-3by2">
-                    <img src="./assets/images/Graphics_Card.png" alt="Placeholder image">
-                    </figure>
-                </div>
-
-                <div class="card-content" id="product-info">
-                    <ul>
-                        <li>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis mollitia esse iure, quis magni soluta suscipit qui, repudiandae, architecto nobis temporibus tempora voluptate sequi deleniti autem ab dicta recusandae assumenda?
-                        </li>
-
-                        <li>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officiis odit nam molestias nemo impedit quis atque nulla sit distinctio. Ut ab laudantium repudiandae quia quisquam, tenetur asperiores id rem?
-                        </li>
-
-                        <li>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, ut facere ex fuga esse, natus ducimus optio vel deleniti cum unde temporibus, exercitationem dolor cupiditate laboriosam provident quia eveniet ipsam!
-                        </li>
-                        <li>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ullam iure qui esse ipsam beatae fuga omnis sit, illum et! Nam commodi perspiciatis deleniti esse expedita rerum quaerat perferendis? Odio.
-                        </li>
-
-                        <li>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ratione culpa veritatis magnam cumque voluptates neque veniam! Dolore, doloribus? In voluptatibus tempore cumque nemo sapiente sed! Rerum id dolorum atque.
-                        </li>
-                    </ul>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ratione culpa veritatis magnam cumque voluptates neque veniam! Dolore, doloribus? In voluptatibus tempore cumque nemo sapiente sed! Rerum id dolorum atque.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    
-    
-        <!-- SPACER ON RIGHT-->
-        <div class="column is-1"></div>
+        
+        
+            <!-- SPACER ON RIGHT-->
+            <div class="column is-1"></div>
 
-    </div>
+        </div>
+    </main>
 
       <footer class="footer">
         <div class="content has-text-centered">
