@@ -74,15 +74,14 @@
         </div>
       </hero>
 
-      <div class="columns is-mobile is-multiline is-centered">
+    <div class="columns is-mobile is-multiline is-flex-grow-1 is-centered">
 
         <!-- SPACER ON LEFT-->
         <div class="column is-1"></div>
 
-        <div class="column column-style">
+        <div class="column column-style" id="product-info-fillin-column">
 
             <!--PRODUCT TYPE BUTTON-->
-
             <div class="dropdown is-hoverable"> <!--WE can configure this to play with Javascript by replacing "is-hoverable" with "is-active"-->
                 <div class="dropdown-trigger">
                   <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
@@ -93,9 +92,11 @@
                 <!--We can put anything we want in these. Links, references, text, anything-->
                 <div class="dropdown-menu" id="dropdown-menu" role="menu">
                     <div class="dropdown-content">
+                            
                         <a href="#" class="dropdown-item">
                             GPU
                         </a>
+                        
 
                         <hr class="dropdown-divider">
                         
@@ -111,15 +112,159 @@
                     </div>
                 </div>
             </div>
+                
+                <!--MANUFACTURER BUTTON-->
+
+            <div class="dropdown is-hoverable" id="manufacturer-button-dropdown"> <!--WE can configure this to play with Javascript by replacing "is-hoverable" with "is-active"-->
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <p>Manufacturer?</p>
+                    </button>
+                </div>
+
+                <!--We can put anything we want in these. Links, references, text, anything-->
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                    <div class="dropdown-content">
+                            
+                        <a href="#" class="dropdown-item">
+                            AMD
+                        </a>
+                        
+
+                        <hr class="dropdown-divider">
+                        
+                        <a href="#" class="dropdown-item">
+                            NVIDIA
+                        </a>
+
+                        <hr class="dropdown-divider">
+
+                        <a href="#" class="dropdown-item">
+                            INTEL
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown is-hoverable" id="series-button-dropdown"> <!--WE can configure this to play with Javascript by replacing "is-hoverable" with "is-active"-->
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <p>Series?</p>
+                    </button>
+                </div>
+
+                <!--We can put anything we want in these. Links, references, text, anything-->
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                    <div class="dropdown-content">
+                            
+                        <a href="#" class="dropdown-item">
+                            2700
+                        </a>
+                        
+
+                        <hr class="dropdown-divider">
+                        
+                        <a href="#" class="dropdown-item">
+                            1080
+                        </a>
+
+                        <hr class="dropdown-divider">
+
+                        <a href="#" class="dropdown-item">
+                            1070
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--ITEM 1 COLUMN-->
+
+        <div class="column column-style" id="item-1-column">
+            <div class="card">
+                <header class="card-header">
+                    <p class="card-header-title is-centered">
+                        ITEM 1
+                    </p>
+                </header>
+
+                <div class="card-image">
+                    <figure class="image">
+                    <img src="https://via.placeholder.com/728x90.png?text=PRODUCT+PLACEHOLDER+IMAGE" alt="Placeholder image">
+                    </figure>
+                </div>
+
+                <div class="card-content" id="product-info">
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis mollitia esse iure, quis magni soluta suscipit qui, repudiandae, architecto nobis temporibus tempora voluptate sequi deleniti autem ab dicta recusandae assumenda?
+                        </li>
+
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officiis odit nam molestias nemo impedit quis atque nulla sit distinctio. Ut ab laudantium repudiandae quia quisquam, tenetur asperiores id rem?
+                        </li>
+
+                        <li>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, ut facere ex fuga esse, natus ducimus optio vel deleniti cum unde temporibus, exercitationem dolor cupiditate laboriosam provident quia eveniet ipsam!
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ullam iure qui esse ipsam beatae fuga omnis sit, illum et! Nam commodi perspiciatis deleniti esse expedita rerum quaerat perferendis? Odio.
+                        </li>
+
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ratione culpa veritatis magnam cumque voluptates neque veniam! Dolore, doloribus? In voluptatibus tempore cumque nemo sapiente sed! Rerum id dolorum atque.
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <div class="column column-style">ITEM 1</div>
-        <div class="column column-style">ITEM 2</div>
 
+        <div class="column column-style" id="item-2-column">
+
+            <div class="card">
+                <header class="card-header">
+                    <p class="card-header-title is-centered">
+                        ITEM 2
+                    </p>
+                </header>
+
+                <div class="card-image">
+                    <figure class="image">
+                    <img src="https://via.placeholder.com/728x90.png?text=PRODUCT+PLACEHOLDER+IMAGE" alt="Placeholder image">
+                    </figure>
+                </div>
+
+                <div class="card-content" id="product-info">
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis mollitia esse iure, quis magni soluta suscipit qui, repudiandae, architecto nobis temporibus tempora voluptate sequi deleniti autem ab dicta recusandae assumenda?
+                        </li>
+
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officiis odit nam molestias nemo impedit quis atque nulla sit distinctio. Ut ab laudantium repudiandae quia quisquam, tenetur asperiores id rem?
+                        </li>
+
+                        <li>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, ut facere ex fuga esse, natus ducimus optio vel deleniti cum unde temporibus, exercitationem dolor cupiditate laboriosam provident quia eveniet ipsam!
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ullam iure qui esse ipsam beatae fuga omnis sit, illum et! Nam commodi perspiciatis deleniti esse expedita rerum quaerat perferendis? Odio.
+                        </li>
+
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ratione culpa veritatis magnam cumque voluptates neque veniam! Dolore, doloribus? In voluptatibus tempore cumque nemo sapiente sed! Rerum id dolorum atque.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    
         <!-- SPACER ON RIGHT-->
         <div class="column is-1"></div>
 
-      </div>
+    </div>
 
       <footer class="footer">
         <div class="content has-text-centered">
