@@ -12,7 +12,7 @@
 
     <!-- navbar  -->
 
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="https://media.giphy.com/media/xuXc3kD8AeVaw/giphy-downsized-large.gif">
             <img src="https://via.placeholder.com/112x28?text=BRANDING!">
@@ -37,16 +37,18 @@
               </a>
       
               <div class="navbar-dropdown">
-                <a class="navbar-item">
+                <a class="navbar-item" href="#footer-about-us">
                   About
                 </a>
                 
-                <a class="navbar-item">
-                  Contact
+                <a class="navbar-item" href="#footer-our-resources">
+                  Resources
                 </a>
-                <hr class="navbar-divider">
-                <a class="navbar-item">
-                  Report an issue
+                <a class="navbar-item" href="#footer-contact-us">
+                  Contact Us
+                </a>
+                <a class="navbar-item" href="#footer-support">
+                    Support
                 </a>
               </div>
             </div>
@@ -327,10 +329,44 @@
     </main>
 
       <footer class="footer">
-        <div class="content has-text-centered">
-          <p>
-            <strong>THE FOOTER IS HERE</strong>
-          </p>
+
+        <div class="columns is-mobile is-multiline is-flex-grow-1 is-centered">
+
+            <!-- SPACER ON LEFT-->
+            <div class="column is-1"></div>
+
+            <div class="column column-style" id="footer-support">
+                <div class="content has-text-centered">
+                    <p>
+                      <strong>SUPPORT</strong>
+                    </p>
+                </div>
+            </div>
+            <div class="column column-style" id="footer-contact-us">
+                <div class="content has-text-centered">
+                    <p>
+                        <strong>CONTACT US</strong>
+                    </p>
+                </div>
+            </div>
+            <div class="column column-style" id="footer-about-us">
+                <div class="content has-text-centered">
+                    <p>
+                        <strong>ABOUT US</strong>
+                    </p>
+                </div>
+            </div>
+            <div class="column column-style" id="footer-our-resources">
+                <div class="content has-text-centered">
+                    <p>
+                        <strong>OUR RESOURCES </strong>
+                    </p>
+                </div>
+            </div>
+
+            <!-- SPACER ON RIGHT-->
+            <div class="column is-1"></div>
+
         </div>
       </footer>
 
