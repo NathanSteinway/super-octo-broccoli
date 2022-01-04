@@ -1,7 +1,7 @@
-#hero-container {
-    background-image: url('../images/mt-fuji-sea-of-clouds-sunrise-46253.jpeg'); 
-    background-size: cover; 
-    background-blend-mode: normal;
+#hero-img{
+    background-image: url(../images/mt-fuji-sea-of-clouds-sunrise-46253.jpeg);
+    background-size: cover;
+    background-blend-mode: soft-light;
 }
 
 .column-style {
