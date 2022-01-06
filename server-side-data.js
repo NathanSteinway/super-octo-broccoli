@@ -1,4 +1,4 @@
-{
+data = {
     "api-version": "1.2.3.4",    
     "data": [
         {
