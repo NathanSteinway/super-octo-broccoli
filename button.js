@@ -16,13 +16,6 @@ button.onmouseover = function(event) {
     }
 };
 
-button.onmouseleave = function(event) {
-
-    var dieOptionsDie = document.getElementById("options")
-    dieOptionsDie.remove();
-
-}
-
 button2.onmouseover = function(event) {
 
     var fakeApi = serverData;
@@ -33,13 +26,7 @@ button2.onmouseover = function(event) {
         prodNameEl.setAttribute("id", "options");
         prodNameEl.textContent = fakeApi.data[i]["item-name"];
         dropdownContainerEl2.appendChild(prodNameEl);
+        
     }
 };
-
-button2.onmouseleave = function(event) {
-
-    var dieOptionsDie = document.getElementById("options")
-    dieOptionsDie.remove();
-
-}
 
