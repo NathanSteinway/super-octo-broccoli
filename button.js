@@ -1,8 +1,12 @@
 var button = document.getElementById("product-button-1");
+var dropdownContainerEl = document.querySelector("#productOneDropdown");
 
-button.onclick = function(event) {
+button.onmouseover = function(event) {
 
-    var data = (document.getElementById("api-result"));
-    console.log(serverData.data);
+    var fakeApi = (document.getElementById("api-result"));
+    
+    for (let i = 0; i < fakeApi.length; i++) {
+        
+    }
     
 };
