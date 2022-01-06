@@ -1,5 +1,8 @@
-var getStuff = function() {
-    console.log("I'm working!")
-}
+var button = document.getElementById("product-button-1");
 
-document.getElementById("product-button-1").addEventListener("click", getStuff);
+button.onclick = function(event) {
+
+    var data = (document.getElementById("api-result"));
+    console.log(serverData.data);
+    
+};
